@@ -16,7 +16,7 @@ def setup_nbvscode():
     if user_data_dir:
         cmd += ["--user-data-dir", user_data_dir]
 
-    cmd += working_dir
+    cmd.append(working_dir)
     return {
         "command": cmd,
         "timeout": 20,
